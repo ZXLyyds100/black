@@ -1,0 +1,72 @@
+[
+  {
+    "name": "path-before.png",
+    "bytes": 112952,
+    "sha256": "4b67a2281d953f2ac9e5374dbaf5f97956a654e7dd1a8d361940ed1d40992e43"
+  },
+  {
+    "name": "path-after.png",
+    "bytes": 116775,
+    "sha256": "5e249513b28e1dd7e8ecd16ac8dc5ad686e14903941e8c83ad71bc98af948e4c"
+  },
+  {
+    "name": "path-comparison.png",
+    "bytes": 126321,
+    "sha256": "2735d9f0cc9b829cbf7f3ffd18ee68de3be91798b171a6c2af09a6ccd8d5d548"
+  },
+  {
+    "name": "binary-before.png",
+    "bytes": 112265,
+    "sha256": "4f21d1e619fa8efdd331289da5edc0420e6fa1de42e5dc04d90b519efd087e59"
+  },
+  {
+    "name": "binary-after.png",
+    "bytes": 116239,
+    "sha256": "067f408e85ab0cb92a21a4fe74d5e1572afc5d19e32af8bdc639849463e0a448"
+  },
+  {
+    "name": "binary-comparison.png",
+    "bytes": 125588,
+    "sha256": "33aaddbf9645e6ee53683a622849fad3fb953c413b79a01a7ef342f2a898a999"
+  },
+  {
+    "name": "power-before.png",
+    "bytes": 112589,
+    "sha256": "ef96f28335fe0c4818e89e913d5a14a227b566b3da245ead82dd5d0b749f96cc"
+  },
+  {
+    "name": "power-after.png",
+    "bytes": 116441,
+    "sha256": "abf1ca09cf0589d55594564986bc570ad578907c505f2358a1dd1589bb77eac9"
+  },
+  {
+    "name": "power-comparison.png",
+    "bytes": 125823,
+    "sha256": "e1a279f80d67f42ca5e5bece9162c69380f77df3155ecf5c7238bb6a4bc3326f"
+  },
+  {
+    "name": "matrix-before.png",
+    "bytes": 113793,
+    "sha256": "5b0ba3e726bcc062fbdc294a2ff6ebf7e7c9c742179970f3d8cc412fb1ff2e8a"
+  },
+  {
+    "name": "matrix-after.png",
+    "bytes": 117688,
+    "sha256": "d140cd0bf58b1f5ffd92816a08bd702be5766d9af2b9df484fd2205462903a0d"
+  },
+  {
+    "name": "matrix-comparison.png",
+    "bytes": 127159,
+    "sha256": "6796cabbc479ae2794df72d09070b5ebc1d174cd1f02b2368f01a491b3fd540e"
+  },
+  {
+    "name": "black-before-after.webm",
+    "bytes": 1084640,
+    "sha256": "6a3cd03661097fc19ef3e687bb160af051309a76b3fd8f25a896af0032cbad62"
+  },
+  {
+    "name": "video-playback-check.png",
+    "bytes": 352113,
+    "sha256": "df86c6311872e336a1af3291fd3d9b58827619dd9eca8660351df9162ef00be1"
+  }
+]

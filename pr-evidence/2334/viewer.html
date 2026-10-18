@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Black #2334 — actual CLI output comparison</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f6f8;color:#18202a;font:18px system-ui,sans-serif}
+main{max-width:1360px;margin:auto;padding:32px}h1{font-size:28px;margin:0 0 12px}
+p{margin:8px 0;line-height:1.5}.notice{background:#fff3ce;border:1px solid #d4b65c;padding:12px}
+.meta{font-size:15px;color:#4e5663}code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.controls{display:flex;gap:12px;margin:22px 0;align-items:center}
+select,button{font:inherit;padding:10px 15px;border:1px solid #7b8490;border-radius:5px;background:white;color:inherit}
+button[aria-pressed=true]{background:#253c59;color:white}.panels{display:flex;gap:20px}
+.panel{flex:1;min-width:0;border:1px solid #b8bec8;background:white;border-radius:6px}
+h2{font-size:20px;margin:0;padding:15px 20px;border-bottom:1px solid #d9dde2}
+pre{font-size:23px;line-height:1.6;margin:0;padding:22px;white-space:pre;overflow:auto;min-height:255px}
+.input{font-size:18px;padding:12px 18px;background:white;border:1px solid #d9dde2;min-height:0}
+.result{font-size:16px;padding:0 20px 16px;margin:0}.notes{margin-top:22px;font-size:16px}
+[hidden]{display:none!important}
+</style><main>
+<h1>Black #2334 · overloaded operators and long strings</h1>
+<p class="notice">Evidence viewer of saved, real CLI stdout — not a Black product UI. No model calls or mocked formatter.</p>
+<p class="meta" id="condition"></p><p class="meta"><code id="command"></code></p>
+<div class="controls"><label for="example">Fixture</label><select id="example"></select>
+<button id="before">Before</button><button id="after">After</button><button id="both">Side by side</button></div>
+<p>Unchanged input</p><pre class="input" id="input"></pre>
+<p class="meta" id="revision"></p>
+<div class="panels"><section class="panel" id="before-panel"><h2>Before · pristine main</h2><pre id="before-code"></pre><p class="result" id="before-result"></p></section>
+<section class="panel" id="after-panel"><h2>After · proposed patch</h2><pre id="after-code"></pre><p class="result" id="after-result"></p></section></div>
+<div class="notes"><p>Same-condition capture: stable and ordinary preview outputs remain byte-identical on the 47-fixture matrix.</p>
+<p>Executed all 26 overloaded methods before and after formatting: string values unchanged. This local matrix is not the hosted diff-shades corpus.</p>
+<p>Scope: existing unstable <code>string_processing</code> feature only. Linux, Windows and other Python versions have not been tested locally.</p></div>
+</main><script>
+const data = {"beforeHead":"11cff1312bf96e02bce9a467d0b5a2dd65300642","condition":"Python 3.12.14 · line length 20 · same input, interpreter and CLI flags","command":"python -m black --preview --enable-unstable-feature string_processing -l 20 -c INPUT","cases":[{"id":"augmented /=","input":"x /= \"directory subdirectory file.txt\"\n","before":"x /= \"directory subdirectory file.txt\"\n","after":"x /= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary /","input":"x / \"directory subdirectory file.txt\"\n","before":"x / \"directory subdirectory file.txt\"\n","after":"x / (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary **","input":"x ** \"directory subdirectory file.txt\"\n","before":"x ** \"directory subdirectory file.txt\"\n","after":"x ** (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented @=","input":"x @= \"directory subdirectory file.txt\"\n","before":"x @= \"directory subdirectory file.txt\"\n","after":"x @= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"}],"summary":{"at":"2026-10-18T13:56:36.530Z","cases":47,"modesPerCase":4,"totalCliInvocationsAcrossBoth":376,"stableAndPreviewUnchanged":true,"verifiedOverloadsPerVersion":26,"changedInOptInStringProcessing":["augmented -=","augmented *=","augmented @=","augmented /=","augmented //=","augmented %=","augmented **=","augmented \u003c\u003c=","augmented >>=","augmented &=","augmented |=","augmented ^=","binary +","binary -","binary *","binary @","binary /","binary //","binary %","binary **","binary \u003c\u003c","binary >>","binary &","binary |","binary ^","attribute","subscript","nested","raw-string","f-string","right-trailer"],"fullMatrix":[{"id":"augmented -=","before":"x -= \"directory subdirectory file.txt\"\n","after":"x -= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented *=","before":"x *= \"directory subdirectory file.txt\"\n","after":"x *= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented @=","before":"x @= \"directory subdirectory file.txt\"\n","after":"x @= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented /=","before":"x /= \"directory subdirectory file.txt\"\n","after":"x /= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented //=","before":"x //= \"directory subdirectory file.txt\"\n","after":"x //= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented %=","before":"x %= \"directory subdirectory file.txt\"\n","after":"x %= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented **=","before":"x **= \"directory subdirectory file.txt\"\n","after":"x **= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented \u003c\u003c=","before":"x \u003c\u003c= \"directory subdirectory file.txt\"\n","after":"x \u003c\u003c= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented >>=","before":"x >>= \"directory subdirectory file.txt\"\n","after":"x >>= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented &=","before":"x &= \"directory subdirectory file.txt\"\n","after":"x &= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented |=","before":"x |= \"directory subdirectory file.txt\"\n","after":"x |= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"augmented ^=","before":"x ^= \"directory subdirectory file.txt\"\n","after":"x ^= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary +","before":"(\n    x\n    + \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n","after":"x + (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary -","before":"(\n    x\n    - \"directory subdirectory file.txt\"\n)\n","after":"x - (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary *","before":"x * \"directory subdirectory file.txt\"\n","after":"x * (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary @","before":"x @ \"directory subdirectory file.txt\"\n","after":"x @ (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary /","before":"x / \"directory subdirectory file.txt\"\n","after":"x / (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary //","before":"x // \"directory subdirectory file.txt\"\n","after":"x // (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary %","before":"x % \"directory subdirectory file.txt\"\n","after":"x % (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary **","before":"x ** \"directory subdirectory file.txt\"\n","after":"x ** (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary \u003c\u003c","before":"(\n    x\n    \u003c\u003c \"directory subdirectory file.txt\"\n)\n","after":"x \u003c\u003c (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary >>","before":"(\n    x\n    >> \"directory subdirectory file.txt\"\n)\n","after":"x >> (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary &","before":"(\n    x\n    & \"directory subdirectory file.txt\"\n)\n","after":"x & (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary |","before":"x | \"directory subdirectory file.txt\"\n","after":"x | (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"binary ^","before":"(\n    x\n    ^ \"directory subdirectory file.txt\"\n)\n","after":"x ^ (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"attribute","before":"obj.path /= \"directory subdirectory file.txt\"\n","after":"obj.path /= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"subscript","before":"items[\n    0\n] @= \"directory subdirectory file.txt\"\n","after":"items[0] @= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"nested","before":"def f():\n    obj.path //= \"directory subdirectory file.txt\"\n","after":"def f():\n    obj.path //= (\n        \"directory\"\n        \" subdirectory\"\n        \" file.txt\"\n    )\n"},{"id":"raw-string","before":"x /= r\"directory subdirectory file.txt\"\n","after":"x /= (\n    r\"directory\"\n    r\" subdirectory\"\n    r\" file.txt\"\n)\n"},{"id":"f-string","before":"x /= f\"directory {name} subdirectory file.txt\"\n","after":"x /= (\n    \"directory\"\n    f\" {name}\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"},{"id":"right-trailer","before":"x / \"directory subdirectory file.txt\".upper()\n","after":"x / (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n    .upper()\n)\n"}]}};
+const $ = id => document.getElementById(id);
+let phase = 'both';
+for (const c of data.cases) { const o=document.createElement('option');o.value=c.id;o.textContent=c.id;$('example').append(o); }
+$('condition').textContent=data.condition;
+$('command').textContent=data.command;
+$('revision').textContent='Pristine base: '+data.beforeHead+' · after: same base plus proposed source patch';
+function render(){
+ const c=data.cases.find(c=>c.id===$('example').value);
+ $('input').textContent=c.input;
+ for(const p of ['before','after']){
+  $(p+'-code').textContent=c[p];
+  $(p+'-panel').hidden=phase!=='both'&&phase!==p;
+  const max=Math.max(...c[p].trimEnd().split('\n').map(l=>l.length));
+  $(p+'-result').textContent='CLI exit 0 · longest line '+max+' / 20 columns';
+ }
+ for(const p of ['before','after','both'])$(p).setAttribute('aria-pressed',String(phase===p));
+ document.documentElement.dataset.ready=c.id+':'+phase;
+}
+$('example').addEventListener('change',render);
+for(const p of ['before','after','both'])$(p).addEventListener('click',()=>{phase=p;render()});
+render();
+</script></html>

@@ -1,0 +1,8 @@
+{
+  "generatedCasesPerVersion": 514,
+  "trackedFilesPerVersion": 68,
+  "stableAndPreviewByteIdentical": true,
+  "newStringProcessingFailures": 0,
+  "baselineStringProcessingFailures": ["star-tuple"],
+  "scope": "Local bounded corpus, not the hosted diff-shades project corpus."
+}

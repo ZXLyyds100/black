@@ -1,0 +1,1438 @@
+{
+  "phase": "after",
+  "at": "2026-10-18T13:56:36.483Z",
+  "repository": "<workspace>/work/repos/black-batch3",
+  "head": "11cff1312bf96e02bce9a467d0b5a2dd65300642",
+  "importedFrom": "<workspace>/work/repos/black-batch3/src/black/__init__.py",
+  "interpreter": "Python 3.12.14",
+  "sourceSha256": "95adc39a0d679d57f5b887544b1c4275f135dd0fba5edb7f29974b7441090e88",
+  "cases": [
+    {
+      "id": "augmented +=",
+      "source": "x += \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x += \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x += \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x += (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x += (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented -=",
+      "source": "x -= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x -= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x -= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x -= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x -= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented *=",
+      "source": "x *= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x *= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x *= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x *= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x *= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented @=",
+      "source": "x @= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x @= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x @= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x @= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x @= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented /=",
+      "source": "x /= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented //=",
+      "source": "x //= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x //= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x //= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x //= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x //= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented %=",
+      "source": "x %= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x %= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x %= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x %= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x %= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented **=",
+      "source": "x **= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x **= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x **= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x **= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x **= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented <<=",
+      "source": "x <<= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x <<= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x <<= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x <<= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x <<= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented >>=",
+      "source": "x >>= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x >>= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x >>= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x >>= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x >>= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented &=",
+      "source": "x &= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x &= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x &= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x &= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x &= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented |=",
+      "source": "x |= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x |= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x |= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x |= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x |= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "augmented ^=",
+      "source": "x ^= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x ^= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x ^= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x ^= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x ^= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary +",
+      "source": "x + \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    + \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    + \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x + (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x + (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary -",
+      "source": "x - \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    - \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    - \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x - (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x - (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary *",
+      "source": "x * \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x * \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x * \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x * (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x * (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary @",
+      "source": "x @ \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x @ \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x @ \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x @ (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x @ (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary /",
+      "source": "x / \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x / \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x / \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x / (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x / (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary //",
+      "source": "x // \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x // \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x // \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x // (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x // (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary %",
+      "source": "x % \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x % \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x % \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x % (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x % (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary **",
+      "source": "x ** \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x ** \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x ** \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x ** (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x ** (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary <<",
+      "source": "x << \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    << \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    << \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x << (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x << (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary >>",
+      "source": "x >> \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    >> \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    >> \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x >> (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x >> (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary &",
+      "source": "x & \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    & \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    & \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x & (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x & (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary |",
+      "source": "x | \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x | \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x | \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x | (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x | (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "binary ^",
+      "source": "x ^ \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    ^ \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "(\n    x\n    ^ \"directory subdirectory file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x ^ (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x ^ (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary +=",
+      "source": "variable += \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable += (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable += (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable += (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable += (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary -=",
+      "source": "variable -= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable -= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable -= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable -= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable -= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary *=",
+      "source": "variable *= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable *= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable *= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable *= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable *= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary @=",
+      "source": "variable @= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable @= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable @= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable @= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable @= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary /=",
+      "source": "variable /= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable /= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable /= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable /= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable /= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary //=",
+      "source": "variable //= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable //= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable //= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable //= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable //= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary %=",
+      "source": "variable %= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable %= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable %= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable %= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable %= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary **=",
+      "source": "variable **= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable **= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable **= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable **= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable **= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary <<=",
+      "source": "variable <<= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable <<= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable <<= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable <<= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable <<= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary >>=",
+      "source": "variable >>= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable >>= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable >>= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable >>= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable >>= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary &=",
+      "source": "variable &= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable &= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable &= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable &= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable &= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary |=",
+      "source": "variable |= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable |= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable |= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable |= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable |= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "boundary ^=",
+      "source": "variable ^= \"foo bar\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable ^= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable ^= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable ^= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "variable ^= (\n    \"foo bar\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "attribute",
+      "source": "obj.path /= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "obj.path /= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "obj.path /= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "obj.path /= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "obj.path /= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "subscript",
+      "source": "items[0] @= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "items[\n    0\n] @= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "items[\n    0\n] @= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "items[0] @= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "items[0] @= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "nested",
+      "source": "def f():\n    obj.path //= \"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "def f():\n    obj.path //= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "def f():\n    obj.path //= \"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "def f():\n    obj.path //= (\n        \"directory\"\n        \" subdirectory\"\n        \" file.txt\"\n    )\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "def f():\n    obj.path //= (\n        \"directory\"\n        \" subdirectory\"\n        \" file.txt\"\n    )\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "raw-string",
+      "source": "x /= r\"directory subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= r\"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= r\"directory subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= (\n    r\"directory\"\n    r\" subdirectory\"\n    r\" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= (\n    r\"directory\"\n    r\" subdirectory\"\n    r\" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "f-string",
+      "source": "x /= f\"directory {name} subdirectory file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= f\"directory {name} subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= f\"directory {name} subdirectory file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= (\n    \"directory\"\n    f\" {name}\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= (\n    \"directory\"\n    f\" {name}\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "right-trailer",
+      "source": "x / \"directory subdirectory file.txt\".upper()\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x / \"directory subdirectory file.txt\".upper()\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x / \"directory subdirectory file.txt\".upper()\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x / (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n    .upper()\n)\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x / (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n    .upper()\n)\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "pragma",
+      "source": "x /= \"directory subdirectory file.txt\"  # noqa\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= \"directory subdirectory file.txt\"  # noqa\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= \"directory subdirectory file.txt\"  # noqa\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= \"directory subdirectory file.txt\"  # noqa\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= \"directory subdirectory file.txt\"  # noqa\n",
+          "stderr": ""
+        }
+      }
+    },
+    {
+      "id": "unbreakable",
+      "source": "x /= \"directory/subdirectory/file.txt\"\n",
+      "outputs": {
+        "stable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= \"directory/subdirectory/file.txt\"\n",
+          "stderr": ""
+        },
+        "preview": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= \"directory/subdirectory/file.txt\"\n",
+          "stderr": ""
+        },
+        "string_processing": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= \"directory/subdirectory/file.txt\"\n",
+          "stderr": ""
+        },
+        "unstable": {
+          "exit": 0,
+          "signal": null,
+          "stdout": "x /= \"directory/subdirectory/file.txt\"\n",
+          "stderr": ""
+        }
+      }
+    }
+  ],
+  "semantics": {
+    "program": "import json\n\nevents = []\n\nclass Sink:\n    def capture(self, value):\n        events.append(value)\n        return self\n    __add__ = capture\n    __iadd__ = capture\n    __sub__ = capture\n    __isub__ = capture\n    __mul__ = capture\n    __imul__ = capture\n    __matmul__ = capture\n    __imatmul__ = capture\n    __truediv__ = capture\n    __itruediv__ = capture\n    __floordiv__ = capture\n    __ifloordiv__ = capture\n    __mod__ = capture\n    __imod__ = capture\n    __pow__ = capture\n    __ipow__ = capture\n    __lshift__ = capture\n    __ilshift__ = capture\n    __rshift__ = capture\n    __irshift__ = capture\n    __and__ = capture\n    __iand__ = capture\n    __or__ = capture\n    __ior__ = capture\n    __xor__ = capture\n    __ixor__ = capture\n\nsink = Sink()\nsink + \"directory subdirectory file.txt\"\nsink += \"directory subdirectory file.txt\"\nsink - \"directory subdirectory file.txt\"\nsink -= \"directory subdirectory file.txt\"\nsink * \"directory subdirectory file.txt\"\nsink *= \"directory subdirectory file.txt\"\nsink @ \"directory subdirectory file.txt\"\nsink @= \"directory subdirectory file.txt\"\nsink / \"directory subdirectory file.txt\"\nsink /= \"directory subdirectory file.txt\"\nsink // \"directory subdirectory file.txt\"\nsink //= \"directory subdirectory file.txt\"\nsink % \"directory subdirectory file.txt\"\nsink %= \"directory subdirectory file.txt\"\nsink ** \"directory subdirectory file.txt\"\nsink **= \"directory subdirectory file.txt\"\nsink << \"directory subdirectory file.txt\"\nsink <<= \"directory subdirectory file.txt\"\nsink >> \"directory subdirectory file.txt\"\nsink >>= \"directory subdirectory file.txt\"\nsink & \"directory subdirectory file.txt\"\nsink &= \"directory subdirectory file.txt\"\nsink | \"directory subdirectory file.txt\"\nsink |= \"directory subdirectory file.txt\"\nsink ^ \"directory subdirectory file.txt\"\nsink ^= \"directory subdirectory file.txt\"\nprint(json.dumps(events))\n",
+    "formatted": "import json\n\nevents = []\n\n\nclass Sink:\n    def capture(\n        self, value\n    ):\n        events.append(\n            value\n        )\n        return self\n\n    __add__ = (\n        capture\n    )\n    __iadd__ = (\n        capture\n    )\n    __sub__ = (\n        capture\n    )\n    __isub__ = (\n        capture\n    )\n    __mul__ = (\n        capture\n    )\n    __imul__ = (\n        capture\n    )\n    __matmul__ = (\n        capture\n    )\n    __imatmul__ = (\n        capture\n    )\n    __truediv__ = (\n        capture\n    )\n    __itruediv__ = (\n        capture\n    )\n    __floordiv__ = (\n        capture\n    )\n    __ifloordiv__ = (\n        capture\n    )\n    __mod__ = (\n        capture\n    )\n    __imod__ = (\n        capture\n    )\n    __pow__ = (\n        capture\n    )\n    __ipow__ = (\n        capture\n    )\n    __lshift__ = (\n        capture\n    )\n    __ilshift__ = (\n        capture\n    )\n    __rshift__ = (\n        capture\n    )\n    __irshift__ = (\n        capture\n    )\n    __and__ = (\n        capture\n    )\n    __iand__ = (\n        capture\n    )\n    __or__ = capture\n    __ior__ = (\n        capture\n    )\n    __xor__ = (\n        capture\n    )\n    __ixor__ = (\n        capture\n    )\n\n\nsink = Sink()\nsink + (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink += (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink - (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink -= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink * (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink *= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink @ (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink @= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink / (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink /= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink // (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink //= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink % (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink %= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink ** (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink **= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink << (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink <<= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink >> (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink >>= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink & (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink &= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink | (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink |= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink ^ (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nsink ^= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\nprint(\n    json.dumps(\n        events\n    )\n)\n",
+    "original": {
+      "exit": 0,
+      "signal": null,
+      "stdout": "[\"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\"]\n",
+      "stderr": ""
+    },
+    "executed": {
+      "exit": 0,
+      "signal": null,
+      "stdout": "[\"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\", \"directory subdirectory file.txt\"]\n",
+      "stderr": ""
+    },
+    "verifiedOverloads": 26
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "at": "2026-10-18T13:56:36.530Z",
+  "cases": 47,
+  "modesPerCase": 4,
+  "totalCliInvocationsAcrossBoth": 376,
+  "stableAndPreviewUnchanged": true,
+  "verifiedOverloadsPerVersion": 26,
+  "changedInOptInStringProcessing": [
+    "augmented -=",
+    "augmented *=",
+    "augmented @=",
+    "augmented /=",
+    "augmented //=",
+    "augmented %=",
+    "augmented **=",
+    "augmented <<=",
+    "augmented >>=",
+    "augmented &=",
+    "augmented |=",
+    "augmented ^=",
+    "binary +",
+    "binary -",
+    "binary *",
+    "binary @",
+    "binary /",
+    "binary //",
+    "binary %",
+    "binary **",
+    "binary <<",
+    "binary >>",
+    "binary &",
+    "binary |",
+    "binary ^",
+    "attribute",
+    "subscript",
+    "nested",
+    "raw-string",
+    "f-string",
+    "right-trailer"
+  ],
+  "fullMatrix": [
+    {
+      "id": "augmented -=",
+      "before": "x -= \"directory subdirectory file.txt\"\n",
+      "after": "x -= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "augmented *=",
+      "before": "x *= \"directory subdirectory file.txt\"\n",
+      "after": "x *= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "augmented @=",
+      "before": "x @= \"directory subdirectory file.txt\"\n",
+      "after": "x @= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "augmented /=",
+      "before": "x /= \"directory subdirectory file.txt\"\n",
+      "after": "x /= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "augmented //=",
+      "before": "x //= \"directory subdirectory file.txt\"\n",
+      "after": "x //= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "augmented %=",
+      "before": "x %= \"directory subdirectory file.txt\"\n",
+      "after": "x %= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "augmented **=",
+      "before": "x **= \"directory subdirectory file.txt\"\n",
+      "after": "x **= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "augmented <<=",
+      "before": "x <<= \"directory subdirectory file.txt\"\n",
+      "after": "x <<= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "augmented >>=",
+      "before": "x >>= \"directory subdirectory file.txt\"\n",
+      "after": "x >>= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "augmented &=",
+      "before": "x &= \"directory subdirectory file.txt\"\n",
+      "after": "x &= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "augmented |=",
+      "before": "x |= \"directory subdirectory file.txt\"\n",
+      "after": "x |= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "augmented ^=",
+      "before": "x ^= \"directory subdirectory file.txt\"\n",
+      "after": "x ^= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary +",
+      "before": "(\n    x\n    + \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n",
+      "after": "x + (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary -",
+      "before": "(\n    x\n    - \"directory subdirectory file.txt\"\n)\n",
+      "after": "x - (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary *",
+      "before": "x * \"directory subdirectory file.txt\"\n",
+      "after": "x * (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary @",
+      "before": "x @ \"directory subdirectory file.txt\"\n",
+      "after": "x @ (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary /",
+      "before": "x / \"directory subdirectory file.txt\"\n",
+      "after": "x / (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary //",
+      "before": "x // \"directory subdirectory file.txt\"\n",
+      "after": "x // (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary %",
+      "before": "x % \"directory subdirectory file.txt\"\n",
+      "after": "x % (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary **",
+      "before": "x ** \"directory subdirectory file.txt\"\n",
+      "after": "x ** (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary <<",
+      "before": "(\n    x\n    << \"directory subdirectory file.txt\"\n)\n",
+      "after": "x << (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary >>",
+      "before": "(\n    x\n    >> \"directory subdirectory file.txt\"\n)\n",
+      "after": "x >> (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary &",
+      "before": "(\n    x\n    & \"directory subdirectory file.txt\"\n)\n",
+      "after": "x & (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary |",
+      "before": "x | \"directory subdirectory file.txt\"\n",
+      "after": "x | (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "binary ^",
+      "before": "(\n    x\n    ^ \"directory subdirectory file.txt\"\n)\n",
+      "after": "x ^ (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "attribute",
+      "before": "obj.path /= \"directory subdirectory file.txt\"\n",
+      "after": "obj.path /= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "subscript",
+      "before": "items[\n    0\n] @= \"directory subdirectory file.txt\"\n",
+      "after": "items[0] @= (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "nested",
+      "before": "def f():\n    obj.path //= \"directory subdirectory file.txt\"\n",
+      "after": "def f():\n    obj.path //= (\n        \"directory\"\n        \" subdirectory\"\n        \" file.txt\"\n    )\n"
+    },
+    {
+      "id": "raw-string",
+      "before": "x /= r\"directory subdirectory file.txt\"\n",
+      "after": "x /= (\n    r\"directory\"\n    r\" subdirectory\"\n    r\" file.txt\"\n)\n"
+    },
+    {
+      "id": "f-string",
+      "before": "x /= f\"directory {name} subdirectory file.txt\"\n",
+      "after": "x /= (\n    \"directory\"\n    f\" {name}\"\n    \" subdirectory\"\n    \" file.txt\"\n)\n"
+    },
+    {
+      "id": "right-trailer",
+      "before": "x / \"directory subdirectory file.txt\".upper()\n",
+      "after": "x / (\n    \"directory\"\n    \" subdirectory\"\n    \" file.txt\"\n    .upper()\n)\n"
+    }
+  ]
+}
